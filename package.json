@@ -1,0 +1,36 @@
+{
+    "name": "bmm-g-code-syntax",
+    "displayName": "BMM G-Code Syntax",
+    "description": "Syntax highlighting for G-code, developed by Bryan McQuaig",
+    "version": "0.0.1",
+    "author": {
+        "name": "Bryan McQuaig"
+    },
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "icon": "images/logo.png",
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bmm5153/BMM-G-Code-Syntax"
+    },
+
+    "contributes": {
+        "languages": [{
+            "id": "gcode",
+            "aliases": ["G-Code", "gcode"],
+            "extensions": [".nc",".NC",".eia",".EIA",".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gcode",
+            "scopeName": "source.gcode",
+            "path": "./syntaxes/gcode.tmLanguage.json"
+        }]
+    }
+}
