@@ -1,6 +1,6 @@
-# bmg-g-code-syntax README
+# bmm-g-code-syntax README
 
-This is the README for your extension "bmg-g-code-syntax". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "bmm-g-code-syntax". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
