@@ -3,7 +3,7 @@
     "displayName": "BMM G-Code Syntax",
     "description": "Syntax highlighting for G-code, developed by Bryan McQuaig",
     "version": "0.0.1",
-    "publisher": "Bryan McQuaig",
+    "publisher": "bmcquaig",
     "author": {
         "name": "Bryan McQuaig"
     },
