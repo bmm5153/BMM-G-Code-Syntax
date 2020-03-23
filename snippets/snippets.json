@@ -28,139 +28,137 @@
 		}
 	],
 	"repository": {
-
 		"keywords": {
 			"patterns": [
 				{
-				"name": "keyword.control.gcode",
-				"match": "(FOR|WHILE|DO\\d|IF|AND|OR|THEN|GOTO[#\\d]+|END\\d)"
+					"name": "keyword.control.gcode",
+					"match": "(FOR|WHILE|DO\\d|IF|AND|OR|THEN|GOTO[#\\d]+|END\\d)"
 				},
 				{
-				"name": "keyword.operator.gcode",
-				"match": "(LT|GT|GE|LE|EQ|NE)"
+					"name": "keyword.operator.gcode",
+					"match": "(LT|GT|GE|LE|EQ|NE)"
 				}
 			]
 		},
 		"functions": {
 			"patterns": [
 				{
-				"name": "entity.macro.gcode",
-				"match": "G65\\s?P#?\\d+[#\\[\\]\\+\\*\\/\\s\\w\\d\\.\\-]*"
+					"name": "entity.macro.gcode",
+					"match": "G65\\s?P[#?\\d]+[#\\[\\]\\+\\-\\*\/\\s\\w\\.]*"
 				},
 				{
-				"name": "entity.subprog.gcode",
-				"match": "M98\\s?P\\d+"
+					"name": "entity.subprog.gcode",
+					"match": "M98\\s?P\\d+"
 				}
 			]
 		},
 		"comments": {
 			"patterns": [
 				{
-				"name": "comment.line.gcode",
-				"match": "\\(.*\\)"
+					"name": "comment.line.gcode",
+					"match": "\\(.*\\)"
 				}
 			]
 		},
 		"support": {
 			"patterns": [
 				{
-				"name": "support.constant.gcode",
-				"match": "(SIN|COS|TAN)"
+					"name": "support.constant.gcode",
+					"match": "(SIN|COS|TAN)"
 				},
 				{
-				"name": "support.other.gcode",
-				"match": "[RQ][\\d\\.\\-]+"
+					"name": "support.other.gcode",
+					"match": "[RQ][\\d\\.\\-]+"
 				}
 			]
 		},
 		"variables": {
 			"patterns": [
 				{
-				"name": "variable.assign",
-				"match": "(#\\d+\\s?=\\s?[\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*|#\\d+)"
+					"name": "variable.assign",
+					"match": "(#\\d+\\s?=\\s?[\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*|#\\d+)"
 				},
 				{
-				"name": "variable.call",
-				"match": "#\\d+"
+					"name": "variable.call",
+					"match": "#\\d+"
 				}
 			]
 		},
 		"strings": {
 			"patterns": [
 				{
-				"name": "string.xcode.gcode",
-				"match": "[xX][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
+					"name": "string.xcode.gcode",
+					"match": "[xX][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
 				},
 				{
-				"name": "string.ycode.gcode",
-				"match": "[yY][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
+					"name": "string.ycode.gcode",
+					"match": "[yY][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
 				},
 				{
-				"name": "string.zcode.gcode",
-				"match": "[zZ][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
+					"name": "string.zcode.gcode",
+					"match": "[zZ][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
 				},
 				{
-				"name": "string.acode.gcode",
-				"match": "[aA][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
+					"name": "string.acode.gcode",
+					"match": "[aA][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
 				},
 				{
-				"name": "string.bcode.gcode",
-				"match": "[bB][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
+					"name": "string.bcode.gcode",
+					"match": "[bB][\\s\\[\\]\\.\\d\\-\\+\\*\\/#]*"
 				},
 				{
-				"name": "string.gcode.gcode",
-				"match": "(?!(G43|G65|G10))G\\d+"
+					"name": "string.gcode.gcode",
+					"match": "(?!(G43|G65|G10))G\\d+"
 				},
 				{
-				"name": "string.mcode.gcode",
-				"match": "M\\d+"
+					"name": "string.mcode.gcode",
+					"match": "M\\d+"
 				},
 				{
-				"name": "string.ijkcode.gcode",
-				"match": "[IJK][\\d\\.\\-\\s]+"
+					"name": "string.ijkcode.gcode",
+					"match": "[IJK][\\d\\.\\-\\s]+"
 				}
 			]
 		},
 		"numbers": {
 			"patterns": [
 				{
-				"name": "number.feedrate.gcode",
-				"match": "[fF][\\s\\[\\]\\*\\/\\-\\+#\\d\\.]+"
+					"name": "number.feedrate.gcode",
+					"match": "[fF][\\s\\[\\]\\*\\-\\+#\\d\\.]+"
 				},
 				{
-				"name": "number.spindlespeed.gcode",
-				"match": "[sS]\\d+"
+					"name": "number.spindlespeed.gcode",
+					"match": "[sS]\\d+"
 				},
 				{
-				"name": "number.opstop.gcode",
-				"match": "[mM]0?1"
+					"name": "number.opstop.gcode",
+					"match": "[mM]0?1"
 				},
 				{
-				"name": "number.toolcall.gcode",
-				"match": "(M0?6)?T#?\\d+\\s?(M0?6)?"
+					"name": "number.toolcall.gcode",
+					"match": "(M0?6)?T#?\\d+\\s?(M0?6)?"
 				}
 			]
 		},
 		"types": {
 			"patterns": [
 				{
-				"name": "types.sequence.gcode",
-				"match": "N\\d+"
+					"name": "types.sequence.gcode",
+					"match": "N\\d+"
 				},
 				{
-				"name": "types.workoffset.gcode",
-				"match": "G1?54(P\\d+)?"
+					"name": "types.workoffset.gcode",
+					"match": "G1?54(P\\d+)?"
 				},
 				{
-				"name": "types.workoffsetassign.gcode",
-				"match": "G10\\s?G90\\s?L20?\\s?P[\\s\\[\\]\\d\\+\\-\\.#]+"
+					"name": "types.workoffsetassign.gcode",
+					"match": "G10\\s?G90\\s?L20?\\s?P[\\s\\[\\]\\d\\+\\-\\.#]+"
 				},
 				{
-				"name": "types.tooloffset.gcode",
-				"match": "G43\\s?(H[#\\d]+)?\\s?(T[#\\d]+)?.*"
+					"name": "types.tooloffset.gcode",
+					"match": "G43\\s?(H[#\\d]+)?\\s?(T[#\\d]+)?.*"
 				}
 			]
+		}
 	}
-	}
-
 }
