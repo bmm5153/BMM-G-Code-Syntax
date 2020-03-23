@@ -1,3 +1,7 @@
+FOR THIS TO WORK PROPERLY, YOU MUST ADD THE CONTENTS OF THE SETTINGS.JSON FILE INTO YOUR LOCAL SETTINGS FILE. USUALLY FOUND:
+
+C:\Users\{username}\AppData\Roaming\Code\User
+
 # bmm-g-code-syntax README
 
 This is working draft of custom syntax for G-Code, for use on Visual Studion Code. Suggestions/improvements/criticisms are welcome and encrouraged as this is my first attempt at several things throughout this process.
@@ -6,16 +10,24 @@ This is working draft of custom syntax for G-Code, for use on Visual Studion Cod
 
 This package is intended to highlight and color specific portions of your G-Code and specific ways. Generally speaking, it is intended to make important or often-searched parts of your G-Code very easy to find, and stand out amongst generic X/Y/Z moves. 
 
+You may further customize or change the coloring of the scopes defined by this extension by altering your local settings.json file.
+
+       "scope": "keyword.control.gcode",    ------> Scope defined by regex in syntaxes\gcode.tmLanguage.json file
+       "settings": {      
+            "foreground": "#ff0000",        ------> Coloring for all code that falls in this scope
+            "fontStyle": "underline",       ------> Any stylising for all code that falls in this scope
+
+
 ## Requirements
 
-You must of VS code installed, obviously, and you will need to update your settings.json file in order to customize your colors. 
+You must of VS code installed, and be working with files with extensions: .nc, .eia, or .txt.
 
 ## Extension Settings
 
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. An extra step needed to set colors to defined scopes in local settings.json file. 
 
 ## Release Notes
 
@@ -24,12 +36,6 @@ Users appreciate release notes as you update your extension.
 -----------------------------------------------------------------------------------------------------------
 
 ## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
 
 ### For more information
 
