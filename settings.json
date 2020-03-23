@@ -1,0 +1,195 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control.gcode",
+                "settings": {
+                    "foreground": "#ff0000",
+                    "fontStyle": "underline",
+                }
+            },
+            {
+                "scope": "keyword.controlopen.gcode",
+                "settings": {
+                    "foreground": "#ff0000",
+                    "fontStyle": "underline"
+                }
+            },
+            {
+                "scope": "keyword.controlclose.gcode",
+                "settings": {
+                    "foreground": "#ff0000",
+                    "fontStyle": "underline"
+                }
+            },
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#e77878",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "entity.macro.gcode",
+                "settings": {
+                    "foreground": "#1fc0ff",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.subprog.gcode",
+                "settings": {
+                    "foreground": "#0485ff",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "comment.line.gcode",
+                "settings": {
+                    "foreground": "#74dd93",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "support.constant.gcode",
+                "settings": {
+                    "foreground": "#f700ff",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "support.other.gcode",
+                "settings": {
+                    "foreground": "#ff9676",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "variable.assign",
+                "settings": {
+                    "foreground": "#a55189",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "variable.call",
+                "settings": {
+                    "foreground": "#a55189",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "string.xcode.gcode",
+                "settings": {
+                    "foreground": "#88d3e6",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "string.ycode.gcode",
+                "settings": {
+                    "foreground": "#d7ecbf",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "string.zcode.gcode",
+                "settings": {
+                    "foreground": "#ff4747",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "string.acode.gcode",
+                "settings": {
+                    "foreground": "#8aff80",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "string.bcode.gcode",
+                "settings": {
+                    "foreground": "#008f24",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "string.gcode.gcode",
+                "settings": {
+                    "foreground": "#be7b2e",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "string.mcode.gcode",
+                "settings": {
+                    "foreground": "#9e9e9e",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "string.ijkcode.gcode",
+                "settings": {
+                    "foreground": "#b777e2",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "number.feedrate.gcode",
+                "settings": {
+                    "foreground": "#fbff00",
+                    "fontStyle": "underline"
+                }
+            },
+            {
+                "scope": "number.spindlespeed.gcode",
+                "settings": {
+                    "foreground": "#ff9900",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "number.opstop.gcode",
+                "settings": {
+                    "foreground": "#ff3232",
+                    "fontStyle": "bold underline"
+                }
+            },
+            {
+                "scope": "number.toolcall.gcode",
+                "settings": {
+                    "foreground": "#ffbe6a",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "types.sequence.gcode",
+                "settings": {
+                    "foreground": "#0fb400",
+                    "fontStyle": "bold underline"
+                }
+            },
+            {
+                "scope": "types.workoffset.gcode",
+                "settings": {
+                    "foreground": "#0afff3",
+                    "fontStyle": "italic underline"
+                }
+            },
+            {
+                "scope": "types.workoffsetassign.gcode",
+                "settings": {
+                    "foreground": "#6947a8",
+                    "fontStyle": "italic bold"
+                }
+            },
+            {
+                "scope": "types.tooloffset.gcode",
+                "settings": {
+                    "foreground": "#269c79",
+                    "fontStyle": "italic bold"
+                }
+            }
+        ]
+    }
+}
